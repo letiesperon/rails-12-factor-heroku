@@ -10,8 +10,9 @@ gem 'puma', '~> 4.3'
 gem 'rack', '~> 2.2.3'
 gem 'rack-cors', '~> 1.1.1'
 
-# Postgres Database
+# Databases
 gem 'pg', '~> 1.2.3'
+gem 'redis', '~> 4.0'
 
 # Environment variables
 gem 'dotenv-rails', '~> 2.7.6'
