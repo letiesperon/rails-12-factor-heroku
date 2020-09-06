@@ -9,4 +9,10 @@ class ExampleController < ApplicationController
     name_from_redis = Rails.cache.fetch('name') || 'not defined'
     render json: { name: name_from_redis }
   end
+
+  def whats_my_name_global
+    $name_from_global = params[:name] if params[:name]
+    name_from_global = $name_from_global || 'not defined'
+    render json: { name: name_from_global }
+  end
 end
