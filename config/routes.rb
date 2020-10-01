@@ -3,4 +3,9 @@ Rails.application.routes.draw do
   get '/cual_es_mi_nombre_var' => 'example#cual_es_mi_nombre_var'
   get '/cual_es_mi_nombre_redis' => 'example#cual_es_mi_nombre_redis'
   get '/cual_es_mi_nombre_global' => 'example#cual_es_mi_nombre_global'
+
+  resources :orders, only: [:create, :show]
+
+  # post '/orders' => orders#create
+  # get '/orders/:id' => orders#show
 end
