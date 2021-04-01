@@ -1,5 +1,5 @@
 class ExampleController < ApplicationController
   def home
-    render json: { message: 'welcome!' }
+    render json: { message: 'Welcome!' }
   end
 end
