@@ -20,6 +20,9 @@ gem 'dotenv-rails', '~> 2.7.6'
 # Serializing json views
 gem 'jbuilder', '~> 2.7'
 
+# Async worker
+gem 'sidekiq', '~> 6.1.2'
+
 group :development, :test do
   gem 'byebug', '>= 11.0.1', platforms: %i[mri mingw x64_mingw]
   gem 'rspec-rails', '~> 4.0.1'
