@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "4b24ccac-c94e-489d-bbda-ae577661a49e",
+		"name": "Rails API Base",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sign up",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": {\n        \"email\": \"esperonleticia@gmail.com\", \n        \"password\": \"12345678aA\",\n        \"first_name\": \"Leticia\", \n        \"last_name\": \"Esperon\"\n    }\n}"
+				},
+				"url": {
+					"raw": "https://leti-rails-base.herokuapp.com/api/v1/users",
+					"protocol": "https",
+					"host": [
+						"leti-rails-base",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "client",
+						"value": "xU2gaoR3Xu_PzMPz0GqVEw",
+						"type": "text"
+					},
+					{
+						"key": "access-token",
+						"value": "nPDCDQ1mJt7b5YojpYNcDw",
+						"type": "text"
+					},
+					{
+						"key": "uid",
+						"value": "esperonleticia@gmail.com",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://leti-rails-base.herokuapp.com/api/v1/user",
+					"protocol": "https",
+					"host": [
+						"leti-rails-base",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
